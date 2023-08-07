@@ -1,3 +1,7 @@
+---
+layout: default
+title: SKHansen
+---
 CTO @ Grant Compass "Mere overskud til det gode formål" - devising and developing services aimed at enabling foundations and applicants to take control of their data and finances, ultimately achieving more impact. #techforgood
 
 In charge of development, delivery & compliance. #privacybydesign
