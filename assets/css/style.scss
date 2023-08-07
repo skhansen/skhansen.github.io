@@ -12,8 +12,10 @@
 }
 
 body {
+    background-color:#D1CCDC;
     margin: 0;
-    color:#222222;
+    color:#3D2C2E;
+    font-family: 'Open Sans';
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
@@ -52,6 +54,6 @@ a:active,a:hover {
     grid-row: 1;
 
     img {
-        border:solid 1px #444455;
+        border:solid 1px #424C55;
     }
 }
