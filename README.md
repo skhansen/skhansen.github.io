@@ -8,3 +8,5 @@ I strongly believe in co-creation, multidisciplinary teams and pragmatic agility
 
 Quite enthusiastic about sustainability and nature.
 Also a fan of golf, metal music and things with zombies.
+
+![Me](/docs/assets/me.jpg)
