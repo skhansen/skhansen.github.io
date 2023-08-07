@@ -12,24 +12,17 @@
 }
 
 body {
-    background-color:#D1CCDC;
+    background-color:#f1f0cc;
     margin: 0;
-    color:#3D2C2E;
+    color:#352D39;
     font-family: 'Open Sans';
 }
 
-article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
+article,aside,main {
     display: block;
     margin:0;padding:0;
 }
 
-a {
-    background-color: transparent
-}
-
-a:active,a:hover {
-    outline: 0
-}
 
 .main-content {
     word-wrap: break-word;
@@ -54,6 +47,7 @@ a:active,a:hover {
     grid-row: 1;
 
     img {
-        border:solid 1px #424C55;
+        border:solid 1px #352D39;
+        max-width:100%;
     }
 }
