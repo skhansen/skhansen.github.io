@@ -27,8 +27,8 @@ article,aside,main {
 .main-content {
     word-wrap: break-word;
     max-width:64rem;
-        padding: 2rem 6rem;
-        margin: 0 auto;
+        padding: 0rem 6rem;
+        margin: 10vh auto 0;
         font-size: 1.1rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
