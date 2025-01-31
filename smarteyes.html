@@ -1,29 +1,32 @@
 <html>
-  <head><title>SmartEyes</title><style type="text/css">
+  <head><title>SmartEyes</title><style type=`text/css`>
     html,body {margin:0;padding:0;}
     body {margin: 0;
     padding-top: 5vh;
     padding-left: 20vw;
     font-size: 2em;
     font-family:monospace;}
-  </style></head>  
-  <body>
-    <h3>SmartEyes TimeGrip Admin book</h3>
-    <p>1) "Hiv" nedenstående til dine Bogmærker / Bookmarks.<br/>2) Enjoy!</p>
-    <a style="display: inline-block;
+    p{line-height:1.5;}
+    a{display: inline-block;
     padding: 10px 40px;
     border-radius: 10px;
     background: #e50070;
     text-decoration: none;
-    color: black;" 
+    color: black;}
+    a:hover {text-decoration:underline}
+  </style></head>  
+  <body>
+    <h3>SmartEyes</h3>
+    <p>1) `Hiv` nedenstående til dine Bogmærker / Bookmarks.<br/>2) Enjoy!</p>
+    <a 
     onclick="alert('Du skal hive i den, ikke klikke på den...')"
-    href=`javascript:(async function() { 
+    href="javascript:(async function() { 
 let sessionKey = document.cookie.split(';').find(c => c.indexOf('tgSessionKey')>-1).replace('tgSessionKey=','').trim();
 let date = document.querySelector('[name=event_dint]').value;
 let prj = document.querySelector('[name=prj_ID]').value;
 
 let d = document.createElement('div');
-d.innerHTML = '<p><label>Medarbejder:&nbsp;&nbsp;&nbsp;<select name="smarteyestgfix_res"></select></label></p><p style="margin-top:20px;text-align:right"><input id="smarteyestgfix_cancel" type="button" value="Annuller" />&nbsp;<input id="smarteyestgfix_submit" type="button" value="Udfør" /></p>';
+d.innerHTML = '<p><label>Medarbejder:&nbsp;&nbsp;&nbsp;<select name=`smarteyestgfix_res`></select></label></p><p style=`margin-top:20px;text-align:right`><input id=`smarteyestgfix_cancel` type=`button` value=`Annuller` />&nbsp;<input id=`smarteyestgfix_submit` type=`button` value=`Udfør` /></p>';
 d.id = 'smarteyestgfix';
 d.style.position='fixed';
 d.style.minWidth='20vw';
@@ -74,6 +77,6 @@ body: new URLSearchParams({
 document.getElementById('smarteyestgfix').remove();
 window.location.reload();
 };
-})();`>SmartEyes TG Admin book</a>
+})();">SmartEyes TG Admin book</a>
   </body>
 </html>
