@@ -15,7 +15,9 @@
     border-radius: 10px;
     background: #e50070;
     text-decoration: none;
-    color: black;" href=`javascript:(async function() { 
+    color: black;" 
+    onclick="alert('Du skal hive i den, ikke klikke på den...')"
+    href=`javascript:(async function() { 
 let sessionKey = document.cookie.split(';').find(c => c.indexOf('tgSessionKey')>-1).replace('tgSessionKey=','').trim();
 let date = document.querySelector('[name=event_dint]').value;
 let prj = document.querySelector('[name=prj_ID]').value;
