@@ -30,11 +30,13 @@ body: new URLSearchParams({
 });
 const resourceJsonData = await resourceResponse.json();
 
+if (resourceJsonData.data && resourceJsonData.data.availableResources) {
 for (let resource of resourceJsonData.data.availableResources) {
-let option = document.createElement('option');
-option.value=resource.res_ID;
-option.innerHTML=resource.fullname;
-document.querySelector('[name=smarteyestgfix_res]').appendChild(option);
+  let option = document.createElement('option');
+  option.value=resource.res_ID;
+  option.innerHTML=resource.fullname;
+  document.querySelector('[name=smarteyestgfix_res]').appendChild(option);
+}
 }
 document.getElementById('smarteyestgfix_cancel').onclick = async function () {
 document.getElementById('smarteyestgfix').remove();
