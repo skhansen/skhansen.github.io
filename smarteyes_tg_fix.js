@@ -1,3 +1,4 @@
+(async function () {
 let host = location.hostname;
 let sessionKey = document.cookie.split(';').find(c => c.indexOf('tgSessionKey')>-1).replace('tgSessionKey=','').trim();
 let date = document.querySelector('[name=event_dint]').value;
@@ -56,3 +57,4 @@ body: new URLSearchParams({
 document.getElementById('smarteyestgfix').remove();
 window.location.reload();
 };
+})();
