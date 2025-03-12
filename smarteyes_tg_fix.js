@@ -3,7 +3,7 @@ let host = location.hostname;
 let sessionKey = document.cookie.split(';').find(c => c.indexOf('tgSessionKey')>-1).replace('tgSessionKey=','').trim();
 let date = document.querySelector('[name=event_dint]').value;
 let prj = document.querySelector('[name=prj_ID]').value;
-let resID = jTG.getSessionResID();
+let userResID = jTG.getSessionResID();
 
 let d = document.createElement('div');
 d.innerHTML = '<p><label>Medarbejder:&nbsp;&nbsp;&nbsp;<select name="smarteyestgfix_res"></select></label></p><p style="margin-top:20px;text-align:right"><input id="smarteyestgfix_cancel" type="button" value="Annuller" />&nbsp;<input id="smarteyestgfix_submit" type="button" value="Udfør" /></p>';
@@ -24,7 +24,7 @@ document.body.appendChild(d);
 let resourceResponse = await fetch('https://'+host+'/srvcomm.php?'+(new Date().getTime()),
 {method:'POST',credentials:'include',headers:{'Content-Type': 'application/x-www-form-urlencoded','Content-encoding':'UTF-8'},    
 body: new URLSearchParams({
-'json': JSON.stringify({'itm_ID':-1,'cust_ID':-1,'prj_ID':prj,'res_ID':resID,'serviceArtCode':'O5','eventDint':date, 'eventHour':9, 'eventMinute':30, 'eventLength': 15, 'bIsEditDialog':true}),
+'json': JSON.stringify({'itm_ID':-1,'cust_ID':-1,'prj_ID':prj,'res_ID':userResID,'serviceArtCode':'O5','eventDint':date, 'eventHour':10, 'eventMinute':0, 'eventLength': 15, 'bIsEditDialog':true}),
 'srvFn': 'booking.getAvailableBookingResources',
 'tgSessionKey': urlDecode(sessionKey)})
 });
