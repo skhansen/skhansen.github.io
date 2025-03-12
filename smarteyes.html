@@ -20,7 +20,7 @@
     <p>1) "Hiv" nedenstående til dine Bogmærker / Bookmarks<br/>2) Log ind i TimeGrip<br/>3) Vælg den dag du gerne vil admin-booke<br/>4) Klik på dit nye "Smarteyes TG Admin book"-bogmærke<br/>5) Enjoy!</p>
     <a onclick="alert('Du skal hive i den, ikke klikke på den... Som man siger.')">Smarteyes TG Admin book</a>
     <script>document.querySelector('a').setAttribute('href',`javascript:(async function() { 
-      let response = await fetch('https://skhansen.dk/smarteyes_tg_fix.js');
+      let response = await fetch('https://skhansen.dk/smarteyes_tg_fix.js' + (new Date().getTime()));
       let scriptText = await response.text();
       eval(scriptText);
     })();`)</script>
