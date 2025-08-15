@@ -11,3 +11,5 @@ The goal is always the same: more capacity for what truly matters.\
 
 Personally, I’m passionate about nature and sustainability 🌱\
 And yes, I have a soft spot for golf, metal, and zombies. 🤘⛳🧟‍♂️
+
+[Grant Compass](https://www.grantcompass.com/) / [LinkedIn](https://www.linkedin.com/in/skhansen/)
