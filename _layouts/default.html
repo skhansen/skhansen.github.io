@@ -1,18 +1,21 @@
 <!doctype html>
-<html>
+<html lang="da">
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta name="description" content="Stefan K. Hansen – CEO & Co-founder @ Grant Compass. Tech for good, privacy by design.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">    
-  </head>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-    <main class="main-content" role="main">
-      <article>{{ content }}</article>
-      <aside><img src="/assets/images/new.jpg" /></aside>
+    <main class="container" role="main">
+      {{ content }}
     </main>
+    <footer class="footer">
+      <p>© Stefan K. Hansen · <a href="https://www.linkedin.com/in/skhansen/">LinkedIn</a> · <a href="https://www.grantcompass.com/">Grant Compass</a></p>
+    </footer>
   </body>
 </html>
